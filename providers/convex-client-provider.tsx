@@ -20,15 +20,15 @@ const convexUrl = process.env.NEXT_PUBLIC_CONVEX_URL!
 
 const convex = new ConvexReactClient(convexUrl)
 
-export const ConvexClientProvider: React.FC<ConvexClientProviderProps> = ({chidren}) => {
+export const ConvexClientProvider: React.FC<ConvexClientProviderProps> = ({children}) => {
   return (
       <ClerkProvider>
         <ConvexProviderWithClerk client={convex} useAuth={useAuth}>
           <Unauthenticated>
-            {chidren}
+            {children}
           </Unauthenticated>
           <Authenticated>
-            {chidren}
+            {children}
           </Authenticated>
           <AuthLoading>
             <Loading/>

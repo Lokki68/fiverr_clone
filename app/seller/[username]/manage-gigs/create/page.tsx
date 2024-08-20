@@ -1,3 +1,4 @@
+
 import {CreateForm} from './_components/create-form'
 
 interface CreateGigProps {
@@ -6,7 +7,8 @@ interface CreateGigProps {
   }
 }
 
-const CreateGig = ({params}): CreateGigProps => {
+const CreateGig = ({params}: CreateGigProps) => {
+
   return (
       <div className='flex justify-center'>
         <CreateForm username={params.username} />
