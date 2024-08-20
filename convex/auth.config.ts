@@ -1,7 +1,8 @@
+
 export default {
   providers: [
     {
-      domain: "https://your-issuer-url.clerk.accounts.dev/",
+      domain: "https://hot-anemone-21.clerk.accounts.dev",
       applicationID: "convex",
     },
   ]
