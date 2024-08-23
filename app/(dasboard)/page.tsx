@@ -24,9 +24,10 @@ const Dashboard = ({searchParams}: DashboardProps) => {
     storeUser()
   }, [store]);
 
-  console.log('store', store)
   return (
-      <div>Dashboard</div>
+      <GigList
+        query={searchParams}
+      />
   )
 }
 
