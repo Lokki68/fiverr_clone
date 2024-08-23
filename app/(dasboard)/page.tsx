@@ -1,9 +1,9 @@
 "use client"
 
 import {useEffect} from "react";
-import {store} from "@/convex/users";
 import {useMutation} from "convex/react";
 import {api} from "@/convex/_generated/api";
+import {GigList} from "./_components/gig-list";
 
 interface DashboardProps {
   searchParams: {
